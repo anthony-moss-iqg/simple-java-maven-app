@@ -22,5 +22,8 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('Finish') {
+            steps {
+                echo 'Finished'
     }
 }
